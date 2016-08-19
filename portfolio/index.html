@@ -1,0 +1,13 @@
+---
+layout: page
+title: Portfolio
+---
+
+<div id="home">
+  <h1>Portfolio Posts</h1>
+  <ul class="posts">
+    {% for portfolio_posts in site.portfolio_posts %}
+      <li><span>{{ portfolio_posts.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ portfolio_posts.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
