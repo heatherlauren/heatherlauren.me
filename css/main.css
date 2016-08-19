@@ -1,145 +1,90 @@
-/*****************************************************************************/
 /*
-/* Common
-/*
-/*****************************************************************************/
-/* Global Reset */
-* {
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
   margin: 0;
-  padding: 0; }
-
-html, body {
-  height: 100%; }
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
 
 body {
-  background-color: black;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center; }
+  line-height: 1.4; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-h1 {
-  margin-bottom: 1em; }
+ul {
+  list-style: none; }
 
-p {
-  margin: 1em 0; }
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
 a {
-  color: #00a; }
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
 
-a:hover {
-  color: #000; }
-
-a:visited {
-  color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em; }
-
-.posts li {
-  line-height: 1.75em; }
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%; }
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em; }
-
-.header a {
-  font-weight: bold;
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
   text-decoration: none; }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em; }
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
 
-.title a {
-  color: #a00; }
+del {
+  text-decoration: line-through; }
 
-.title a:hover {
-  color: #000; }
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-.header a.extra:hover {
-  color: #000; }
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
 
-.meta {
-  color: #aaa; }
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden; }
-
-.footer .contact {
-  float: left;
-  margin-right: 3em; }
-
-.footer .contact a {
-  color: #8085C1; }
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right; }
-
-.footer .rss img {
-  border: 0; }
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em; }
-
-.post ul, .post ol {
-  margin-left: 1.35em; }
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em; }
-
-.post pre code {
-  border: none; }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF; }
-
-.post pre.terminal code {
-  background-color: #333; }
+input, select {
+  vertical-align: middle; }
 
 .highlight {
   background: #ffffff; }
@@ -395,5 +340,24 @@ a:visited {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  color: #2a2a2a; }
+
+h4 {
+  font-size: 23.75rem; }
+
+h3 {
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 4.75rem; }
+
+h1 {
+  font-size: 6.4rem; }
+
 body {
   background: white; }
