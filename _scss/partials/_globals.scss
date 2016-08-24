@@ -1,3 +1,8 @@
+html {
+  box-sizing: border-box;
+}
+
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -6,5 +11,13 @@ a {
   &:focus, &:hover {
     color: $pink;
     text-decoration: underline;
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 1fr;
+  @media (max-width: 950px) {
+    grid-template-columns: 0.5fr 5fr 0.5fr;
   }
 }

@@ -2,30 +2,29 @@
 layout: page
 title: Blog
 ---
-
-<main role="main">
   <h1>Blog Posts</h1>
-  <ul>
+  <ul class="blog_container">
     {% for post in site.posts %}
       <li class="blog_post">
         {% if post.image.feature %}
           <a href="{{ post.url }}">
-            <img src="{{ site.url }}/assets/images/{{ post.image.feature }}" class="blog_image" alt="{{ post.title }}">
+            <div class="blog_image" style="background-image: url({{ site.url }}/assets/images/{{ post.image.feature }})"></div>
           </a>
         {% else %}
-        <a href="{{ post.url }}" >
-          <img src="{{ site.url }}/assets/images/138.jpg" class="blog_image" alt="{{ post.title }}">
-        </a>
+          <a href="{{ post.url }}">
+            <div class="blog_image" style="background-image: url({{ site.url }}/assets/images/138.jpg"></div>
+          </a>
         {% endif %}
-        <div class="blog_information">
+        <div class="blog_info">
           <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-          <p class="date">{{ post.date | date_to_string }}</p>
+          <p class="date">{{ post.date | date_to_long_string }}</p>
           {{ post.excerpt }}
-          {% for category in post.categories %}
-            <a class='category' href='/categories/{{category}}/'>{{category}}</a>
-          {% endfor %}
+          <div class="category_container">
+            {% for category in post.categories %}
+              <a class='category' href='/categories/{{category}}/'>{{category}}</a>
+            {% endfor %}
+          </div>
         </div>
       </li>
     {% endfor %}
   </ul>
-</main>

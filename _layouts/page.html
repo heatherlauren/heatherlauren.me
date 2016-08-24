@@ -13,7 +13,19 @@
 
       {% include header.html %}
 
-      {{ content }}
+      <div class="layout">
+
+        <div class="gutter"></div>
+
+        <main role="main">
+
+          {{ content }}
+
+        </main>
+
+        <div class="gutter"></div>
+
+      </div>
 
       {% include footer.html %}
 
