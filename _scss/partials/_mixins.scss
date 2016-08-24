@@ -1,5 +1,5 @@
 %border-gradient {
-  border-bottom: 5px solid transparent;
+  border-bottom: 3px solid transparent;
   -moz-border-image: -moz-linear-gradient(right, $pink 0%, $purple  100%);
   -webkit-border-image: -webkit-linear-gradient(right, $pink 0%, $purple  100%);
   border-image: linear-gradient(to left, $pink 0%, $purple  100%);
