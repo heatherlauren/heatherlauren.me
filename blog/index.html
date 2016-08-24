@@ -2,6 +2,10 @@
 layout: page
 title: Blog
 ---
+  {% for category in site.categories %}
+    <a class='category' href='/categories/{{ category | first }}/'>{{ category | first }}</a>
+  {% endfor %}
+
   <h1>Blog Posts</h1>
   <ul class="blog_container">
     {% for post in site.posts %}
