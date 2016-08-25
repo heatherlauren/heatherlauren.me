@@ -2,14 +2,17 @@
 layout: page
 title: Blog
 ---
-  {% for category in site.categories %}
-    <a class='category' href='/categories/{{ category | first }}/'>{{ category | first }}</a>
-  {% endfor %}
+  <ul class="blog_category_container">
+    <li><a href="#" class="category_button all_category_button">All</a></li>
+    {% for category in site.categories %}
+      <li><a href="#" class="category_button {{category | first}}_category_button">{{ category | first }}</a></li>
+    {% endfor %}
+  </ul>
 
   <h1>Blog Posts</h1>
   <ul class="blog_container">
     {% for post in site.posts %}
-      <li class="blog_post">
+      <li class="blog_post {% for category in post.categories %}{{category}} {% endfor %}">
         {% if post.image.feature %}
           <a href="{{ post.url }}">
             <div class="blog_image" style="background-image: url({{ site.url }}/assets/images/{{ post.image.feature }})"></div>
