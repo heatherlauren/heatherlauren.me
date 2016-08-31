@@ -1,3 +1,5 @@
+// Site-wide
+
 html {
   box-sizing: border-box;
 }
@@ -19,5 +21,39 @@ a {
   grid-template-columns: 0.5fr 4.5fr 1fr;
   @media (max-width: 950px) {
     grid-template-columns: 0.5fr 5fr 0.5fr;
+  }
+}
+
+// Page-wide
+
+.page_title {
+  font-weight: 400;
+  border-bottom: 1px solid lighten($text, 60%);
+  color: lighten($text, 15%);
+  margin: 0% 2%;
+  padding: 0% 1.5% 1% 2%;
+}
+
+.date {
+  color: lighten($text, 20%);
+  font-style: italic;
+  line-height: 0.5;
+}
+
+.excerpt {
+  font-size: 1.8rem;
+  line-height: 3;
+  font-family: $font-serif;
+}
+
+.tag-container__tag {
+  padding: 0 0.5rem;
+  border-right: 1px solid lighten($text, 60%);
+
+  &:first-of-type {
+    padding: 0 0.5rem 0 0;
+  }
+  &:last-of-type {
+    border: none;
   }
 }
