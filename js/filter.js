@@ -4,15 +4,15 @@ $( document ).ready(function() {
 
   var categories = {{ site.categories | jsonify }}
 
-  $('.all_category_button').click(function() {
-    $(".blog_post").hide('slow')
-    $(".blog_post").show('slow')
+  $('.category-container__category_all').click(function() {
+    $(".blog__post").hide('slow')
+    $(".blog__post").show('slow')
   })
 
   $.each( categories, function (key) {
-    $(`.${key}_category_button`).click(function() {
-      $(".blog_post").hide('slow')
-      $(`.${key}`).show('slow')
+    $(`.category-container__category_${key}`).click(function() {
+      $(".blog__post").hide('slow')
+      $(`.blog__post-${key}`).show('slow')
     })
   })
 

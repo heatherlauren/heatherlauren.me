@@ -1,12 +1,4 @@
-.page_title {
-  font-weight: 400;
-  border-bottom: 1px solid lighten($text, 60%);
-  color: lighten($text, 15%);
-  margin: 0% 2%;
-  padding: 0% 1.5% 1% 2%;
-}
-
-.blog_post {
+.blog__post {
   display: flex;
   font-family: $font-sans;
   padding: 2% 0;
@@ -31,7 +23,7 @@
   }
 }
 
-.blog_image {
+.blog__image {
   width: 300px;
   height: 200px;
   margin-right: 10px;
@@ -46,31 +38,7 @@
   }
 }
 
-.blog_info {
+.blog__info {
   display: flex;
   flex-direction: column;
-}
-
-.date {
-  color: lighten($text, 20%);
-  font-style: italic;
-  line-height: 0.5;
-}
-
-.excerpt {
-  font-size: 1.8rem;
-  line-height: 3;
-  font-family: $font-serif;
-}
-
-.category {
-  padding: 0 0.5rem;
-  border-right: 1px solid lighten($text, 60%);
-
-  &:first-of-type {
-    padding: 0 0.5rem 0 0;
-  }
-  &:last-of-type {
-    border: none;
-  }
 }
