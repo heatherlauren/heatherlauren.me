@@ -1,20 +1,18 @@
-html {
-  font-size: 62.5%;
-}
 body {
-  font-size: 1.6rem;
-  font-family: $font-sans;
-  color: $text;
+  font-size: ms(0);
+}
+h5 {
+  font-size: ms(1);
 }
 h4 {
-  font-size: 23.75rem;
+  font-size: ms(2);
 }
 h3 {
-  font-size: 3.2rem;
+  font-size: ms(3);
 }
 h2 {
-  font-size: 4.75rem;
+  font-size: ms(4);
 }
 h1 {
-  font-size: 6.4rem;
+  font-size: ms(5);
 }
