@@ -1,10 +1,14 @@
 @import "partials/reset";
+
+@import "modular-scale/modular-scale";
+
 @import "partials/syntax";
 @import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/typography';
 @import 'partials/globals';
 @import 'partials/blog';
+@import 'partials/header';
 
 body {
     background: white;
