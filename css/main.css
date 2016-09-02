@@ -473,6 +473,9 @@ header {
     .navbar__link {
       width: 6em; } }
 
+.navbar__link--active a {
+  color: #E9155C; }
+
 @media (max-width: 800px) {
   .category-container {
     text-align: center; } }

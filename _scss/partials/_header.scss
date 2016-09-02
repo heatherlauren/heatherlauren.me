@@ -30,3 +30,9 @@ header {
     width: 6em;
   }
 }
+
+.navbar__link--active {
+  a {
+  color: $pink;
+  }
+}
