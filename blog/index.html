@@ -3,8 +3,7 @@ layout: page
 title: Blog
 ---
   {% include category-container.html %}
-
-  <h1>Blog Posts</h1>
+  
   <ul class="blog">
     {% for post in site.posts %}
       <li class="blog__post {% for category in post.categories %}blog__post-{{category}} {% endfor %}">
