@@ -491,6 +491,9 @@ header {
     .category-container li {
       width: 40%;
       margin: 5px; } }
+  @media (max-width: 400px) {
+    .category-container li {
+      font-size: 1em; } }
 
 .category-container__category li {
   border: 3px solid transparent;
