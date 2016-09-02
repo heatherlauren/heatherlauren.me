@@ -2,12 +2,7 @@
 layout: page
 title: Blog
 ---
-  <ul class="category-container">
-    <li><a href="#" class="category-container__category category-container__category_all">All</a></li>
-    {% for category in site.categories %}
-      <li><a href="#" class="category-container__category category-container__category_{{category | first}}">{{ category | first }}</a></li>
-    {% endfor %}
-  </ul>
+  {% include category-container.html %}
 
   <h1>Blog Posts</h1>
   <ul class="blog">
@@ -25,7 +20,7 @@ title: Blog
         <div class="blog__info">
           <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
           <p class="date">{{ post.date | date_to_long_string }}</p>
-          <p class="excerpt">{{ post.excerpt }}</p>
+          <div class="excerpt">{{ post.excerpt }}</p>
           <ul class="tag-container">
             {% for tag in post.tags %}
               <li><a class='tag-container__tag' href='/tags/#{{tag}}/'>{{tag}}</a></li>
