@@ -2,7 +2,10 @@ name: Your New Jekyll Site
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalink: blog/:title/
 collections:
   portfolio_posts:
     output: true
     permalink: /portfolio/:title/
+responsive_image:
+  template: _includes/responsive-image.html
