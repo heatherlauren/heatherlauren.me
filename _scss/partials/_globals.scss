@@ -20,12 +20,8 @@ a {
   }
 }
 
-.layout {
-  display: grid;
-  grid-template-columns: 0.5fr 4.5fr 1fr;
-  @media (max-width: 950px) {
-    grid-template-columns: 0.5fr 5fr 0.5fr;
-  }
+p {
+  margin: 1em;
 }
 
 // Page-wide
@@ -40,7 +36,6 @@ a {
 
 .date {
   color: lighten($text, 20%);
-  font-style: italic;
   line-height: 0.5;
 }
 

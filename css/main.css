@@ -380,12 +380,8 @@ a {
     color: #E9155C;
     text-decoration: underline; }
 
-.layout {
-  display: grid;
-  grid-template-columns: 0.5fr 4.5fr 1fr; }
-  @media (max-width: 950px) {
-    .layout {
-      grid-template-columns: 0.5fr 5fr 0.5fr; } }
+p {
+  margin: 1em; }
 
 .page_title {
   font-weight: 400;
@@ -396,11 +392,17 @@ a {
 
 .date {
   color: #5d5d5d;
-  font-style: italic;
   line-height: 0.5; }
 
 .tag-container__tag {
   padding: 0 0.5rem 0 0; }
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 1fr; }
+  @media (max-width: 950px) {
+    .blog-layout {
+      grid-template-columns: 0.5fr 5fr 0.5fr; } }
 
 .blog__post {
   display: -ms-flexbox;
@@ -413,7 +415,8 @@ a {
     display: inline; }
   .blog__post h2 {
     font-weight: 400;
-    text-transform: none; }
+    text-transform: none;
+    line-height: 1; }
   @media (max-width: 600px) {
     .blog__post {
       -ms-flex-direction: column;
@@ -441,6 +444,9 @@ a {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+.date--blog {
+  font-style: italic; }
 
 header {
   margin: 2%;
@@ -509,6 +515,48 @@ header {
 
 .category-container__category--active {
   color: #E9155C; }
+
+.blog-post {
+  margin: auto auto; }
+  @media (max-width: 1400px) {
+    .blog-post {
+      width: 55%; } }
+  @media (max-width: 1400px) {
+    .blog-post {
+      width: 55%; } }
+  @media (max-width: 1200px) {
+    .blog-post {
+      width: 60%; } }
+  @media (max-width: 900px) {
+    .blog-post {
+      width: 65%; } }
+  @media (max-width: 750px) {
+    .blog-post {
+      width: 70%; } }
+  @media (max-width: 600px) {
+    .blog-post {
+      width: 80%; } }
+  @media (max-width: 450px) {
+    .blog-post {
+      width: 90%; } }
+
+.blog-post-header {
+  width: 70%;
+  margin: auto auto; }
+  .blog-post-header h1 {
+    text-align: center; }
+
+.post {
+  font-family: "freight-text-pro", serif;
+  font-size: 1.25em;
+  line-height: 1.5; }
+  .post li {
+    margin: 0.5em 2em; }
+
+.date--blog-post {
+  text-align: center;
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.25em; }
 
 body {
   background: white; }

@@ -2,30 +2,42 @@
 layout: page
 title: Blog
 ---
-  {% include category-container.html %}
+<div class="blog-layout">
 
-  <ul class="blog">
-    {% for post in site.posts %}
-      <li class="blog__post {% for category in post.categories %}blog__post-{{category}} {% endfor %}">
-        {% if post.image.feature %}
-          <a href="{{ post.url }}">
-            <div class="blog__image" style="background-image: url({{ site.url }}/assets/images/{{ post.image.feature }})"></div>
-          </a>
-        {% else %}
-          <a href="{{ post.url }}">
-            <div class="blog__image" style="background-image: url({{ site.url }}/assets/images/138.jpg"></div>
-          </a>
-        {% endif %}
-        <div class="blog__info">
-          <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-          <p class="date">{{ post.date | date_to_long_string }}</p>
-          <div class="excerpt">{{ post.excerpt }}</p>
-          <ul class="tag-container">
-            {% for tag in post.tags %}
-              <li><a class='tag-container__tag' href='/blog/tags/#{{tag}}/'>{{tag}}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="blog-layout__gutter"></div>
+
+    <main role="main">
+
+      {% include category-container.html %}
+
+      <ul class="blog">
+        {% for post in site.posts %}
+          <li class="blog__post {% for category in post.categories %}blog__post-{{category}} {% endfor %}">
+            {% if post.image.feature %}
+              <a href="{{ post.url }}">
+                <div class="blog__image" style="background-image: url({{ site.url }}/assets/images/{{ post.image.feature }})"></div>
+              </a>
+            {% else %}
+              <a href="{{ post.url }}">
+                <div class="blog__image" style="background-image: url({{ site.url }}/assets/images/138.jpg"></div>
+              </a>
+            {% endif %}
+            <div class="blog__info">
+              <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+              <p class="date date--blog">{{ post.date | date_to_long_string }}</p>
+              <div class="excerpt">{{ post.excerpt }}</p>
+              <ul class="tag-container">
+                {% for tag in post.tags %}
+                  <li><a class='tag-container__tag' href='/blog/tags/#{{tag}}/'>{{tag}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </main>
+
+  <div class="blog-layout__gutter"></div>
+
+</div>
