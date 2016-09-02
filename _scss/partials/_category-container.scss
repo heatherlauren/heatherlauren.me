@@ -16,6 +16,9 @@
       width: 40%;
       margin: 5px;
     }
+    @media (max-width: 400px) {
+      font-size: ms(0);
+    }
   }
 }
 
