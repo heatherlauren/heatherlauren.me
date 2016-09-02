@@ -1,3 +1,11 @@
+.blog-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 1fr;
+  @media (max-width: 950px) {
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+  }
+}
+
 .blog__post {
   display: flex;
   font-family: $font-sans;
@@ -12,6 +20,7 @@
   h2 {
     font-weight: 400;
     text-transform: none;
+    line-height: 1;
   }
   @media (max-width: 600px) {
     flex-direction: column;
@@ -41,4 +50,8 @@
 .blog__info {
   display: flex;
   flex-direction: column;
+}
+
+.date--blog {
+  font-style: italic;
 }
