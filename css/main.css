@@ -373,8 +373,6 @@ body {
 
 a {
   cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
   color: #202F91; }
   a:focus, a:hover {
     color: #E9155C;
@@ -403,6 +401,9 @@ p {
   @media (max-width: 950px) {
     .blog-layout {
       grid-template-columns: 0.5fr 5fr 0.5fr; } }
+  .blog-layout a {
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .blog__post {
   display: -ms-flexbox;
@@ -462,16 +463,19 @@ header {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+  .navbar a {
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .navbar__logo {
   margin: 0;
-  width: 8em; }
+  width: 7em; }
   .navbar__logo img {
     width: 100%; }
 
 .navbar__link {
   font-size: 1.5625em;
-  width: 8em;
+  width: 7em;
   text-align: center; }
   .navbar__link a {
     text-decoration: none !important; }
