@@ -508,6 +508,12 @@ header {
     .category-container li {
       font-size: 1em; } }
 
+.category-container--portfolio {
+  text-align: center; }
+  .category-container--portfolio li {
+    margin-left: 0.2%;
+    margin-right: 0.2%; }
+
 .category-container__category li {
   border: 3px solid transparent;
   -o-border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
@@ -561,6 +567,44 @@ header {
   text-align: center;
   font-family: "freight-sans-pro", sans-serif;
   font-size: 1.25em; }
+
+.portfolio-layout {
+  width: 90%;
+  margin: auto auto; }
+  .portfolio-layout a {
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.portfolio {
+  margin-top: 1%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.portfolio__post {
+  border: solid 1px red;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 1%; }
+
+.portfolio__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px blue;
+  height: 10em;
+  width: 50%; }
+
+.portfolio__info {
+  margin: 1%;
+  padding: 1%;
+  border: 3px solid transparent;
+  -o-border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
+     border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
+  border-image-slice: 1;
+  width: 50%; }
 
 body {
   background: white; }

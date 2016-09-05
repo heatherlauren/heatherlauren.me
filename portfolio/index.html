@@ -2,12 +2,38 @@
 layout: page
 title: Portfolio
 ---
+<div class="portfolio-layout">
 
-<div id="home">
-  <h1>Portfolio Posts</h1>
-  <ul class="posts">
-    {% for portfolio_posts in site.portfolio_posts %}
-      <li><span>{{ portfolio_posts.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ portfolio_posts.title }}</a></li>
-    {% endfor %}
-  </ul>
+    <main role="main">
+
+        <ul class="category-container category-container--portfolio">
+          <a href="#all" class="category-container__category category-container__category_all category-container__category--active"><li>All</li></a>
+          <a href="#branding" class="category-container__category category-container__category_branding"><li>Branding</li></a>
+          <a href="#print" class="category-container__category category-container__category_print"><li>Print</li></a>
+          <a href="#development" class="category-container__category category-container__category_web"><li>Web Development</li></a>
+        </ul>
+
+        <ul class="portfolio">
+          {% for portfolio_posts in site.portfolio_posts %}
+            <li class="portfolio__post {% for portfolio_categories in portfolio_posts.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}">
+                {% if portfolio_posts.image.feature %}
+                  <a href="{{ portfolio_posts.url }}">
+                    <div class="portfolio__image" style="background-image: url({{ site.url }}/assets/images/{{ portfolio_posts.image.feature }})"></div>
+                  </a>
+                {% else %}
+                  <a href="{{ portfolio_posts.url }}">
+                    <div class="portfolio__image" style="background-image: url({{ site.url }}/assets/images/138.jpg)"></div>
+                  </a>
+                {% endif %}
+              <div class="portfolio__info">
+                <a href="{{ portfolio_posts.url }}"><h2>{{ portfolio_posts.title }}</h2></a>
+                <p class="date date--blog">{{ portfolio_posts.date | date: "%B %Y" }}</p>
+                <div class="excerpt">{{ portfolio_posts.excerpt }}</div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+
+    </main>
+
 </div>

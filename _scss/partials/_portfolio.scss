@@ -1,0 +1,40 @@
+.portfolio-layout {
+  width: 90%;
+  margin: auto auto;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.portfolio {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio__post {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.portfolio__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px blue;
+  height: 10em;
+  width: 50%;
+}
+
+.portfolio__info {
+  margin: 1%;
+  padding: 1%;
+  border: 3px solid transparent;
+  -moz-border-image: -moz-linear-gradient(right, $pink 0%, $purple  100%);
+  -webkit-border-image: -webkit-linear-gradient(right, $pink 0%, $purple  100%);
+  border-image: linear-gradient(to left, $pink 0%, $purple  100%);
+  border-image-slice: 1;
+  width: 50%;
+}
