@@ -9,11 +9,15 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
 .navbar__logo {
   margin: 0;
-  width: 8em;
+  width: 7em;
   img {
     width: 100%;
   }
@@ -21,7 +25,7 @@ header {
 
 .navbar__link {
   font-size: ms(2);
-  width: 8em;
+  width: 7em;
   text-align: center;
   a {
     text-decoration: none !important;

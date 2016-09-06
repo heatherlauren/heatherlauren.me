@@ -4,6 +4,10 @@
   @media (max-width: 950px) {
     grid-template-columns: 0.5fr 5fr 0.5fr;
   }
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
 .blog__post {
