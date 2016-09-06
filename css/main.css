@@ -513,6 +513,9 @@ header {
   .category-container--portfolio li {
     margin-left: 0.2%;
     margin-right: 0.2%; }
+  .category-container--portfolio a {
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .category-container__category li {
   border: 3px solid transparent;
@@ -571,40 +574,76 @@ header {
 .portfolio-layout {
   width: 90%;
   margin: auto auto; }
-  .portfolio-layout a {
-    text-transform: uppercase;
-    text-decoration: none; }
+  @media (max-width: 1000px) {
+    .portfolio-layout {
+      width: 90%; } }
 
 .portfolio {
+  margin: auto auto;
   margin-top: 1%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  @media (max-width: 700px) {
+    .portfolio {
+      width: 80%; } }
+  @media (max-width: 600px) {
+    .portfolio {
+      width: 90%; } }
 
 .portfolio__post {
-  border: solid 1px red;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 1%; }
+  padding: 1em;
+  width: 30%; }
+  .portfolio__post h2 {
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+    text-align: center; }
+    @media (max-width: 800px) {
+      .portfolio__post h2 {
+        font-size: 1.95312em; } }
+  .portfolio__post a {
+    text-decoration: none; }
+  @media (max-width: 1200px) {
+    .portfolio__post {
+      width: 30%; } }
+  @media (max-width: 1100px) {
+    .portfolio__post {
+      width: 40%; } }
+  @media (max-width: 800px) {
+    .portfolio__post {
+      width: 50%; } }
+  @media (max-width: 700px) {
+    .portfolio__post {
+      width: 70%; } }
+  @media (max-width: 500px) {
+    .portfolio__post {
+      width: 90%; } }
 
 .portfolio__image {
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid 1px blue;
-  height: 10em;
-  width: 50%; }
+  height: 15em;
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+  @media (max-width: 700px) {
+    .portfolio__image {
+      height: 15em; } }
 
 .portfolio__info {
-  margin: 1%;
-  padding: 1%;
   border: 3px solid transparent;
   -o-border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
      border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
   border-image-slice: 1;
-  width: 50%; }
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  padding: 2%;
+  border-top: none; }
 
 body {
   background: white; }
