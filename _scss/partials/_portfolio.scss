@@ -11,6 +11,7 @@
   margin-top: 1%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   @media (max-width: 700px) {
     width: 80%;
   }
@@ -24,6 +25,9 @@
   flex-direction: column;
   padding: 1em;
   width: 30%;
+  a {
+    text-decoration: none;
+  }
   h2 {
     font-weight: 400;
     text-transform: none;
@@ -33,9 +37,7 @@
       font-size: ms(3);
     }
   }
-  a {
-    text-decoration: none;
-  }
+
   @media (max-width: 1200px) {
     width: 30%;
   }
@@ -64,12 +66,31 @@
 }
 
 .portfolio__info {
-  border: 3px solid transparent;
-  -moz-border-image: -moz-linear-gradient(right, $pink 0%, $purple  100%);
-  -webkit-border-image: -webkit-linear-gradient(right, $pink 0%, $purple  100%);
-  border-image: linear-gradient(to left, $pink 0%, $purple  100%);
-  border-image-slice: 1;
+  @extend %border-gradient;
   flex-grow: 1;
   padding: 2%;
   border-top: none;
+  .excerpt {
+    margin: 0.5em 1em;
+    line-height: 1.2;
+    @media (max-width: 800px) {
+      margin: 0.5em;
+    }
+  }
+}
+
+.date--portfolio {
+  margin: 0.8em 1em;
+  @media (max-width: 800px) {
+    margin: 0.8em 0.5em;
+  }
+}
+
+.portfolio-icon--github {
+  margin-left: 1em;
+  margin-right: 5px;
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
 }
