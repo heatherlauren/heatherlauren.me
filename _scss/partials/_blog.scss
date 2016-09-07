@@ -14,7 +14,7 @@
   display: flex;
   font-family: $font-sans;
   padding: 2% 0;
-  @extend %border-gradient;
+  @extend %border-gradient-bottom;
   p {
     margin: 0.5rem 0;
   }
