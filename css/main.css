@@ -340,13 +340,13 @@ input, select {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-.portfolio__info, .portfolio-post--info {
+.portfolio__info, .portfolio-post--info, .home__info {
   border: 3px solid transparent;
   -o-border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
      border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
   border-image-slice: 1; }
 
-.blog__post, header, .category-container {
+.blog__post, .site-header, .category-container {
   border-bottom: 3px solid transparent;
   -o-border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
      border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
@@ -385,9 +385,6 @@ a {
     color: #E9155C;
     text-decoration: underline; }
 
-p {
-  margin: 1em; }
-
 .page_title {
   font-weight: 400;
   border-bottom: 1px solid #c3c3c3;
@@ -398,9 +395,6 @@ p {
 .date {
   color: #5d5d5d;
   line-height: 0.5; }
-
-.tag-container__tag {
-  padding: 0 0.5rem 0 0; }
 
 .blog-layout {
   display: grid;
@@ -456,7 +450,10 @@ p {
 .date--blog {
   font-style: italic; }
 
-header {
+.tag-container__tag {
+  padding: 0 0.5rem 0 0; }
+
+.site-header {
   margin: 2%;
   padding-bottom: 2%; }
 
@@ -542,6 +539,8 @@ header {
 
 .blog-post {
   margin: auto auto; }
+  .blog-post p {
+    margin: 1em; }
   @media (max-width: 1400px) {
     .blog-post {
       width: 55%; } }
@@ -682,6 +681,8 @@ header {
     margin-left: 0.3em;
     font-weight: 400;
     line-height: 1; }
+  .portfolio-post p {
+    margin: 1em; }
   @media (max-width: 1000px) {
     .portfolio-post {
       -ms-flex-direction: column;
@@ -718,6 +719,48 @@ header {
   margin-bottom: 1.2em;
   margin-left: 1em;
   font-style: italic; }
+
+.home {
+  width: 90%;
+  margin: auto auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.home__info {
+  margin: 1em;
+  width: 70%;
+  padding: 2%; }
+  .home__info p {
+    font-size: 1.25em;
+    margin: 1em auto;
+    line-height: 1.2; }
+    @media (max-width: 700px) {
+      .home__info p {
+        font-size: 1em;
+        line-height: 1.3; } }
+  .home__info h2 {
+    font-weight: 400;
+    color: #E9155C; }
+    @media (max-width: 700px) {
+      .home__info h2 {
+        font-size: 1.95312em; } }
+  @media (max-width: 600px) {
+    .home__info {
+      width: 90%; } }
+
+.home__info--right {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.home__highlight {
+  margin-top: 0.5em !important;
+  font-size: 1.5625em !important; }
+  @media (max-width: 700px) {
+    .home__highlight {
+      margin-top: 0.2em !important;
+      font-size: 1.25em !important; } }
 
 body {
   background: white; }
