@@ -14,11 +14,12 @@ title: Portfolio
         </ul>
 
         <ul class="portfolio">
-          {% for portfolio_posts in site.portfolio_posts %}
-            <li class="portfolio__post {% for portfolio_categories in portfolio_posts.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}">
-                {% if portfolio_posts.image.feature %}
-                  <a href="{{ portfolio_posts.url }}">
-                    <div class="portfolio__image" style="background-image: url({{ site.url }}/assets/images/{{ portfolio_posts.image.feature }})"></div>
+          {% assign sorted = (site.portfolio_posts | sort: 'date') | reverse %}
+          {% for item in sorted %}
+            <li class="portfolio__post{% for portfolio_categories in item.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}{% if item.highlight%}portfolio__post--highlight{% endif %}">
+                {% if item.image.feature %}
+                  <a href="{{ item.url }}">
+                    <div class="portfolio__image" style="background-image: url({{ site.url }}/assets/images/{{ item.image.feature }})"></div>
                   </a>
                 {% else %}
                   <a href="{{ portfolio_posts.url }}">
@@ -26,9 +27,19 @@ title: Portfolio
                   </a>
                 {% endif %}
               <div class="portfolio__info">
-                <a href="{{ portfolio_posts.url }}"><h2>{{ portfolio_posts.title }}</h2></a>
-                <p class="date date--blog">{{ portfolio_posts.date | date: "%B %Y" }}</p>
-                <div class="excerpt">{{ portfolio_posts.excerpt }}</div>
+                <a href="{{ item.url }}"><h2>{{ item.title }}</h2></a>
+                <p class="date date--portfolio">{{ item.date | date: "%B %Y" }}</p>
+                <p class="excerpt">{{ item.excerpt }}</p>
+                {% if item.github %}
+                  <a class="portfolio-icon portfolio-icon--github" href="{{ item.github }}">
+                      <img src="{{ site.url }}/assets/images/github.svg" alt="">
+                  </a>
+                {% endif %}
+                {% if item.site %}
+                  <a class="portfolio-icon" href="{{ item.site }}">
+                      <img src="{{ site.url }}/assets/images/website.svg" alt="">
+                  </a>
+                {% endif %}
               </div>
             </li>
           {% endfor %}
