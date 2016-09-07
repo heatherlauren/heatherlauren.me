@@ -1,0 +1,31 @@
+---
+layout: page
+---
+
+<main role="main">
+
+  <div class="portfolio-post">
+
+    <img class="portfolio-post--image" src="{{ site.url }}/assets/images/138.jpg">
+
+    <div class="portfolio-post--info">
+      <h2>{{ page.title }}</h2>
+      <p class="date date--portfolio-post">{{ page.date | date: "%B %Y" }}</p>
+      {% if page.github %}
+        <a class="portfolio-icon portfolio-icon--github" href="{{ page.github }}">
+          <img src="{{ site.url }}/assets/images/github.svg" alt="">
+        </a>
+      {% endif %}
+      {% if page.site %}
+        <a class="portfolio-icon" href="{{ page.site }}">
+          <img src="{{ site.url }}/assets/images/website.svg" alt="">
+        </a>
+      {% endif %}
+
+      {{ content }}
+
+    </div>
+
+</div>
+
+</main>
