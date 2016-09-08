@@ -1,5 +1,4 @@
 @import "partials/reset";
-
 @import "modular-scale/modular-scale";
 
 @import "partials/syntax";
@@ -7,13 +6,10 @@
 @import 'partials/mixins';
 @import 'partials/typography';
 @import 'partials/globals';
-@import 'partials/blog';
 @import 'partials/header';
 @import 'partials/category-container';
+@import 'partials/blog';
 @import 'partials/blog-post';
 @import 'partials/portfolio';
 @import 'partials/portfolio-post';
-
-body {
-    background: white;
-}
+@import 'partials/homepage';
