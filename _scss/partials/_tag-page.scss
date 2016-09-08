@@ -1,0 +1,31 @@
+.tag-page {
+  width: 90%;
+  margin: auto auto;
+}
+
+.tag-page__title {
+  font-weight: 200;
+  color: $pink;
+  @media (max-width: 800px) {
+    font-size: ms(4);
+  }
+}
+
+.tag-page__tag {
+  margin: 1% auto;
+  padding: 0% 0% 2% 0%;
+  h2 {
+    font-weight: 200;
+    @media (max-width: 800px) {
+      font-size: ms(3);
+    }
+  }
+  li {
+    padding-top: 5px;
+    font-size: ms(1);
+    @media (max-width: 800px) {
+      font-size: ms(0);
+    }
+  }
+  @extend %border-gradient-bottom;
+}
