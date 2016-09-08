@@ -352,6 +352,11 @@ input, select {
      border-image: linear-gradient(to left, #E9155C 0%, #202F91 100%);
   border-image-slice: 1; }
 
+@font-face {
+  font-family: 'DropDeadGorgeous';
+  src: url("/assets/webfonts/320BAC_0_0.eot");
+  src: url("/assets/webfonts/320BAC_0_0.eot?#iefix") format("embedded-opentype"), url("/assets/webfonts/320BAC_0_0.woff2") format("woff2"), url("/assets/webfonts/320BAC_0_0.woff") format("woff"), url("/assets/webfonts/320BAC_0_0.ttf") format("truetype"); }
+
 body {
   font-size: 1em; }
 
@@ -719,6 +724,51 @@ a {
   margin-bottom: 1.2em;
   margin-left: 1em;
   font-style: italic; }
+
+.home-title {
+  width: 88%;
+  margin: 2% auto 3% auto; }
+  .home-title h1 {
+    font-family: 'DropDeadGorgeous';
+    font-size: 5.063em;
+    color: #202F91;
+    background: linear-gradient(to left, #E9155C 50%, #202F91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    @media (max-width: 800px) {
+      .home-title h1 {
+        font-size: 4.4em; } }
+    @media (max-width: 650px) {
+      .home-title h1 {
+        font-size: 4em; } }
+    @media (max-width: 550px) {
+      .home-title h1 {
+        font-size: 3.4em; } }
+    @media (max-width: 500px) {
+      .home-title h1 {
+        font-size: 3em; } }
+  .home-title h2 {
+    color: #E9155C;
+    line-height: 1;
+    margin: 1% auto; }
+    @media (max-width: 1000px) {
+      .home-title h2 {
+        font-size: 1.95312em;
+        line-height: 1.2; } }
+    @media (max-width: 800px) {
+      .home-title h2 {
+        font-size: 1.5625em;
+        line-height: 1.1; } }
+  .home-title li {
+    display: inline;
+    font-size: 1.5625em;
+    color: #E9155C;
+    font-weight: 600; }
+    .home-title li a {
+      text-decoration: none; }
+    @media (max-width: 800px) {
+      .home-title li {
+        font-size: 1.25em; } }
 
 .home {
   width: 90%;
