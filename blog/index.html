@@ -4,9 +4,9 @@ title: Blog
 ---
 <div class="blog-layout">
 
-  <div class="blog-layout__gutter"></div>
+  <div class="blog-layout__gutter blog-layout__gutter--left"></div>
 
-    <main role="main">
+    <main role="main main-blog">
 
       <ul class="category-container category-container--blog">
         <a href="#all" class="category-container__category category-container__category--active category-container__category_all"><li>All</li></a>
@@ -18,15 +18,15 @@ title: Blog
       <ul class="blog">
         {% for post in site.posts %}
           <li class="blog__post {% for category in post.categories %}blog__post-{{category}} {% endfor %}">
-            {% if post.image.feature %}
+            <div class="blog__image">
               <a href="{{ post.url }}">
-                <div class="blog__image" style="background-image: url({{ site.url }}/assets/images/{{ post.image.feature }})"></div>
+                <picture>
+                  <source media="(max-width: 600px)" srcset="{{ site.url }}/resized-assets/blog-images/{{ post.image.feature }}-500.jpg">
+                  <source media="(max-width: 850px)" srcset="{{ site.url }}/resized-assets/blog-images/{{ post.image.feature }}-200.jpg">
+                  <img src="{{ site.url }}/resized-assets/blog-images/{{ post.image.feature }}-300.jpg" alt="{{ post.title }}">
+                </picture>
               </a>
-            {% else %}
-              <a href="{{ post.url }}">
-                <div class="blog__image" style="background-image: url({{ site.url }}/assets/images/138.jpg"></div>
-              </a>
-            {% endif %}
+            </div>
             <div class="blog__info">
               <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
               <p class="date date--blog">{{ post.date | date_to_long_string }}</p>
@@ -43,6 +43,6 @@ title: Blog
 
     </main>
 
-  <div class="blog-layout__gutter"></div>
+  <div class="blog-layout__gutter blog-layout__gutter--right"></div>
 
 </div>

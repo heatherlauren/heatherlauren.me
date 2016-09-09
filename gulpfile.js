@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var responsive  = require('gulp-responsive');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -50,6 +51,38 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
 });
+
+gulp.task('images', function () {
+  return gulp.src('assets/blog-images/*')
+        .pipe(responsive({
+          '*': [{
+            width: 300,
+            height: 200,
+            withoutEnlargement: false,
+            format: 'jpeg',
+            rename: {
+              suffix: '-300'
+            }
+          },{
+            width: 200,
+            height: 200,
+            withoutEnlargement: false,
+            format: 'jpeg',
+            rename: {
+              suffix: '-200'
+            }
+          },{
+            width: 500,
+            height: 250,
+            withoutEnlargement: false,
+            format: 'jpeg',
+            rename: {
+              suffix: '-500'
+            }
+          }]
+        }))
+        .pipe(gulp.dest('resized-assets/blog-images'))
+})
 
 /**
  * Watch scss files for changes & recompile
