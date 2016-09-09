@@ -2,9 +2,11 @@
 layout: post
 title:  "All the Air in the Room – Women and Whorephobia in Tech"
 date:   2016-03-18
-categories: ['tech', 'social justice']
-tags:
+categories: ['tech', 'social-justice']
+tags: 'Diversity-in-Tech'
 excerpt: Tech feminism is failing those who most need its support, and the recent outcry over Microsoft's GDC party demonstrates how.
+image:
+   feature: booth-babes
 ---
 
 Another gaming event, another booth babe controversy. While strictly referring to <a href="http://geekfeminism.wikia.com/wiki/Booth_babes">"women...employed by brands to staff booths at trade shows"</a>, the term is increasingly used to also refer to women hired as dancers or models to staff parties and other industry events. The use of booth babes is by no means limited to the gaming and wider tech scene, but it's in our industry that we've seen the most vocal fightback against the practice. The most recent outcry has come with <a href="http://www.theverge.com/2016/3/18/11262888/microsoft-gdc-2016-party">Microsoft's decision to hire women to dance at their party at this year's GDC</a>. Several people have pointed out that their use of such dancers is particularly egregious given the fact that they'd hosted a 'Women in Games' lunch earlier the same day.

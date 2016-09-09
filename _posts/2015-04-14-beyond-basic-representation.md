@@ -2,8 +2,11 @@
 layout: post
 title:  "Beyond Basic Representation: Community and Queer Realities"
 date:   2015-04-14
-categories: ['pop culture', 'social justice']
+categories: ['pop-culture', 'social-justice']
 tags: Television LGBTQIA+
+excerpt: 'Get ready, America. Dean Pelton is coming out as approximately two-sevenths of what he is!'
+image:
+   feature: deanp
 ---
 
 _'Get ready, America. Dean Pelton is coming out as approximately two-sevenths of what he is!'_

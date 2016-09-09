@@ -5,6 +5,8 @@ date:   2015-06-06
 categories: ['tech', 'design']
 tags: UX LGBTQIA+
 excerpt: No, your users aren't all going to be male or female, and you shouldn't be treating them like they are.
+image:
+   feature: professor-oak-boy-or-girl
 ---
 
 Whatever you're building for the web, you're going to be fighting to attract users and keep them engaged. As such, you should always keep in mind how you can make your work as inclusive and accessible as possible. Conversations about accessibility in the tech world tend to be dominated by questions over how we can better cater for users with physical access needs (e.g. those using screenreaders or colourblind users). While this is incredibly important, there are other aspects of accessibility you should be thinking about too.

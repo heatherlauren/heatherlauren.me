@@ -2,9 +2,11 @@
 layout: post
 title:  "Online Security for Feminists 101"
 date:   2016-02-01
-categories: ['tech', 'social justice']
+categories: ['tech', 'social-justice']
 tags: Security
 excerpt: Everyone should know how to protect their accounts and personal information online, but online security is particularly important for women who work on the internet.
+image:
+   feature: security
 ---
 
 Everyone should know how to protect their accounts and personal information online, but online security is particularly important for feminists who work on the internet, as anti-feminists increasingly turn to hacking, harassment and doxxing (that is, leaking people's personal details online) in their campaigns against us. Despite this, many of us don't take steps to protect ourselves until we're being attacked - and by then its often too late. Online security has a reputation for being time-consuming, expensive and confusing, but all it takes is a lunch hour to take some basic steps to shore up your defence against potential attackers:

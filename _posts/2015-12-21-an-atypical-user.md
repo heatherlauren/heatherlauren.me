@@ -2,9 +2,11 @@
 layout: post
 title:  "An Atypical User: How the UX Process is Leading to Exclusionary Experiences"
 date:   2015-12-21
-categories: ['tech', 'social justice']
-tags: UX
+categories: ['tech', 'social-justice']
+tags: UX Diversity-in-Tech
 excerpt: "The UX process' focus on the typical user is leaving countless users out in the cold, and we need to be questioning our assumptions about our audience."
+image:
+   feature: ux
 ---
 
 The tech scene's current love affair with UX design should be a boon for those invested in accessible and inclusive user experiences. After all, the whole point of the UX process is to create a great experience for all users, isn't it? Ideally, yes. But, in practice, the UX process means designing and building a great experience for a product's _typical_ user.
