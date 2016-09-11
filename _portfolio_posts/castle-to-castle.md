@@ -4,6 +4,9 @@ title:  "Castle to Castle"
 portfolio_categories: ['branding']
 date: 2014-12-01
 excerpt: "Logo and branding for Castle to Castle podcast"
+image:
+   thumbnail: castle-to-castle-thumb
+   featured-1: castle-to-castle-featured
 ---
 
 Logo for Castle to Castle podcast. The podcast’s name comes from the location of its two hosts, one in Warwick and one in the States, and their respective castles – Warwick castle and the castles found at Disneyland and Walt Disney World.

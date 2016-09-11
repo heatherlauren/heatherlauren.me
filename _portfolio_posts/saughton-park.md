@@ -5,7 +5,9 @@ portfolio_categories: ["branding"]
 date: 2014-03-01
 excerpt: "Logo for Edinburgh community group"
 image:
-   feature: 138.jpg
+   thumbnail: fosp-thumb
+   featured-1: fosp-featured-1
+   featured-2: fosp-featured-2
 ---
 
 Proposed logo for the Edinburgh community group Friends of Saughton Park. The client wished for the logo to communicate the message ‘Understanding and preserving our past to improve our future’.

@@ -5,7 +5,8 @@ portfolio_categories: ["web", "branding"]
 date: 2015-08-01
 excerpt: "Custom WordPress theme and logo for light aircraft enthusiast community"
 image:
-   feature: 138.jpg
+   thumbnail: sonex-thumb
+   featured-1: sonex-featured
 github: https://github.com/heatherlauren/sonexeuro
 site: http://sonexeuro.com/
 ---
