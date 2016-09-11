@@ -1,6 +1,0 @@
-<ul class="category-container">
-  <a href="#all" class="category-container__category category-container__category--active category-container__category_all"><li>All</li></a>
-  {% for category in site.categories %}
-    <a href="#{{ category | first | slugify }}" class="category-container__category category-container__category_{{category | first}}"><li>{{ category | first }}</li></a>
-  {% endfor %}
-</ul>
