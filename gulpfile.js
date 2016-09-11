@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var responsive  = require('gulp-responsive');
+var ghPages     = require('gulp-gh-pages');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -52,6 +53,9 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+/**
+ * Responsive images
+ */
 gulp.task('images', function () {
   return gulp.src('assets/blog-images/*')
         .pipe(responsive({
@@ -91,6 +95,14 @@ gulp.task('images', function () {
 gulp.task('watch', function () {
     gulp.watch(['_scss/*.scss', '_scss/partials/*.scss'], ['sass'])
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild'])
+});
+
+/**
+ * Deploy site
+ */
+gulp.task('deploy', function() {
+  return gulp.src('./_site/**/*')
+    .pipe(ghPages());
 });
 
 /**
