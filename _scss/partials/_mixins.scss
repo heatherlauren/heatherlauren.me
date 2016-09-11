@@ -13,3 +13,19 @@
   border-image: linear-gradient(to left, $pink 0%, $purple  100%);
   border-image-slice: 1;
 }
+
+%border-gradient-left {
+  border-left: 3px solid transparent;
+  -moz-border-image: -moz-linear-gradient(bottom, $pink 0%, $purple  100%);
+  -webkit-border-image: -webkit-linear-gradient(bottom, $pink 0%, $purple  100%);
+  border-image: linear-gradient(to top, $pink 0%, $purple  100%);
+  border-image-slice: 1;
+}
+
+%border-gradient-top {
+  border-top: 3px solid transparent;
+  -moz-border-image: -moz-linear-gradient(bottom, $pink 0%, $purple  100%);
+  -webkit-border-image: -webkit-linear-gradient(bottom, $pink 0%, $purple  100%);
+  border-image: linear-gradient(to top, $pink 0%, $purple  100%);
+  border-image-slice: 1;
+}
