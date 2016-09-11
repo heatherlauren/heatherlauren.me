@@ -9,16 +9,16 @@ title: {{ page.title }}
 
     <section class="portfolio-post__image">
       {% if page.image.featured-2 and page.image.featured-3%}
-      <img class="portfolio-post__image--50" src="{{ site.github.url }}/assets/portfolio-images/{{ page.image.featured-1 }}.jpg" alt="{{ page.title }}">
+      <img class="portfolio-post__image--50" src="/assets/portfolio-images/{{ page.image.featured-1 }}.jpg" alt="{{ page.title }}">
       <div class="portfolio-post__image--vertical">
-        <img class="portfolio-post__image--25" src="{{ site.github.url }}/assets/portfolio-images/{{ page.image.featured-2 }}.jpg" alt="{{ page.title }}">
-        <img class="portfolio-post__image--25" src="{{ site.github.url }}/assets/portfolio-images/{{ page.image.featured-3 }}.jpg" alt="{{ page.title }}">
+        <img class="portfolio-post__image--25" src="/assets/portfolio-images/{{ page.image.featured-2 }}.jpg" alt="{{ page.title }}">
+        <img class="portfolio-post__image--25" src="/assets/portfolio-images/{{ page.image.featured-3 }}.jpg" alt="{{ page.title }}">
       </div>
       {% elsif page.image.featured-2 %}
-        <img class="portfolio-post__image--50" src="{{ site.github.url }}/assets/portfolio-images/{{ page.image.featured-1 }}.jpg" alt="{{ page.title }}">
-        <img class="portfolio-post__image--50" src="{{ site.github.url }}/assets/portfolio-images/{{ page.image.featured-2 }}.jpg" alt="{{ page.title }}">
+        <img class="portfolio-post__image--50" src="/assets/portfolio-images/{{ page.image.featured-1 }}.jpg" alt="{{ page.title }}">
+        <img class="portfolio-post__image--50" src="/assets/portfolio-images/{{ page.image.featured-2 }}.jpg" alt="{{ page.title }}">
       {% else %}
-        <img class="portfolio-post__image--100" src="{{ site.github.url }}/assets/portfolio-images/{{ page.image.featured-1 }}.jpg" alt="{{ page.title }}">
+        <img class="portfolio-post__image--100" src="/assets/portfolio-images/{{ page.image.featured-1 }}.jpg" alt="{{ page.title }}">
       {% endif %}
     </section>
 
@@ -27,12 +27,12 @@ title: {{ page.title }}
       <p class="date date--portfolio-post">{{ page.date | date: "%B %Y" }}</p>
       {% if page.github %}
         <a class="portfolio-icon portfolio-icon--github" href="{{ page.github }}">
-          <img src="{{ site.github.url }}/assets/icons/github.svg" alt="">
+          <img src="/assets/icons/github.svg" alt="">
         </a>
       {% endif %}
       {% if page.site %}
         <a class="portfolio-icon" href="{{ page.site }}">
-          <img src="{{ site.github.url }}/assets/icons/website.svg" alt="">
+          <img src="/assets/icons/website.svg" alt="">
         </a>
       {% endif %}
 

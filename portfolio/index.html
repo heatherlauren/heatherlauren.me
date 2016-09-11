@@ -18,7 +18,7 @@ title: Portfolio
           {% for item in sorted %}
             <li class="portfolio__post{% for portfolio_categories in item.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}{% if item.highlight%}portfolio__post--highlight{% endif %}">
                   <a href="{{ item.url }}">
-                    <div class="portfolio__image" style="background-image: url({{ site.github.url }}/assets/portfolio-images/{{ item.image.thumbnail }}.jpg)"></div>
+                    <div class="portfolio__image" style="background-image: url(/assets/portfolio-images/{{ item.image.thumbnail }}.jpg)"></div>
                   </a>
               <div class="portfolio__info">
                 <a href="{{ item.url }}"><h2>{{ item.title }}</h2></a>
@@ -26,12 +26,12 @@ title: Portfolio
                 <p class="excerpt">{{ item.excerpt }}</p>
                 {% if item.github %}
                   <a class="portfolio-icon portfolio-icon--github" href="{{ item.github }}">
-                      <img src="{{ site.github.url }}/assets/icons/github.svg" alt="">
+                      <img src="/assets/icons/github.svg" alt="">
                   </a>
                 {% endif %}
                 {% if item.site %}
                   <a class="portfolio-icon" href="{{ item.site }}">
-                      <img src="{{ site.github.url }}/assets/icons/website.svg" alt="">
+                      <img src="/assets/icons/website.svg" alt="">
                   </a>
                 {% endif %}
               </div>
