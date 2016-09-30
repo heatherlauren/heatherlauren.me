@@ -1,13 +1,8 @@
 .blog-post {
   margin: auto auto;
+  width: 55%;
   p {
     margin: 1em;
-  }
-  @media (max-width: 1400px) {
-    width: 55%;
-  }
-  @media (max-width: 1400px) {
-    width: 55%;
   }
   @media (max-width: 1200px) {
     width: 60%;
