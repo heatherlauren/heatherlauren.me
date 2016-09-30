@@ -594,15 +594,10 @@ footer {
   padding: 0 0.5rem 0 0; }
 
 .blog-post {
-  margin: auto auto; }
+  margin: auto auto;
+  width: 55%; }
   .blog-post p {
     margin: 1em; }
-  @media (max-width: 1400px) {
-    .blog-post {
-      width: 55%; } }
-  @media (max-width: 1400px) {
-    .blog-post {
-      width: 55%; } }
   @media (max-width: 1200px) {
     .blog-post {
       width: 60%; } }
