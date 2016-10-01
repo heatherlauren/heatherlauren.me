@@ -16,26 +16,17 @@ title: Portfolio
         <ul class="portfolio">
           {% assign sorted = (site.portfolio_posts | sort: 'date') | reverse %}
           {% for item in sorted %}
-            <li class="portfolio__post{% for portfolio_categories in item.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}{% if item.highlight%}portfolio__post--highlight{% endif %}">
-                  <a href="{{ item.url }}">
-                    <div class="portfolio__image" style="background-image: url(/assets/portfolio-images/{{ item.image.thumbnail }}.jpg)"></div>
-                  </a>
+            <div class="portfolio__post{% for portfolio_categories in item.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}">
+              <a class="portfolio__selector" href="{{ item.url }}">
+                <img class="portfolio__image" src="/assets/portfolio-images/{{ item.image.thumbnail }}.jpg" alt="{{ item.title }}"/>
+              </a>
               <div class="portfolio__info">
-                <a href="{{ item.url }}"><h2>{{ item.title }}</h2></a>
-                <p class="date date--portfolio">{{ item.date | date: "%B %Y" }}</p>
-                <p class="excerpt">{{ item.excerpt }}</p>
-                {% if item.github %}
-                  <a class="portfolio-icon portfolio-icon--github" href="{{ item.github }}">
-                      <img src="/assets/icons/github.svg" alt="">
-                  </a>
-                {% endif %}
-                {% if item.site %}
-                  <a class="portfolio-icon" href="{{ item.site }}">
-                      <img src="/assets/icons/website.svg" alt="">
-                  </a>
-                {% endif %}
+                <a href="{{ item.url }}">
+                  <h2>{{ item.title }}</h2>
+                  <p class="excerpt">{{ item.excerpt }}</p>
+                </a>
               </div>
-            </li>
+            </div>
           {% endfor %}
         </ul>
 
