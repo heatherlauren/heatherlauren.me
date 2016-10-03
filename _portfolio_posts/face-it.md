@@ -1,7 +1,7 @@
 ---
 layout: portfolio-post
 title:  "Face It"
-portfolio_categories: ["web"]
+portfolio_categories: ["branding", "web"]
 date: 2016-10-01
 excerpt: "MVP app for the Anna Freud digital accelerator programme"
 image:
