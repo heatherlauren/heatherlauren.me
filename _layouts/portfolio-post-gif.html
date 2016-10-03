@@ -1,0 +1,33 @@
+---
+layout: page
+title: {{ page.title }}
+---
+
+<main role="main">
+
+  <article class="portfolio-post">
+
+    <section class="portfolio-post__image">
+        <img class="portfolio-post__image--100" src="/assets/portfolio-images/{{ page.image.featured-1 }}.gif" alt="{{ page.title }}">
+    </section>
+    <section class="portfolio-post__info">
+      <h2>{{ page.title }}</h2>
+      <p class="date date--portfolio-post">{{ page.date | date: "%B %Y" }}</p>
+      {% if page.github %}
+        <a class="portfolio-icon portfolio-icon--github" href="{{ page.github }}">
+          <img src="/assets/icons/github.svg" alt="">
+        </a>
+      {% endif %}
+      {% if page.site %}
+        <a class="portfolio-icon" href="{{ page.site }}">
+          <img src="/assets/icons/website.svg" alt="">
+        </a>
+      {% endif %}
+
+      {{ content }}
+
+    </section>
+
+  </article>
+
+</main>
