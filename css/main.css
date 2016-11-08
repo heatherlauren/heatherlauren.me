@@ -489,6 +489,9 @@ footer {
 .category-container__category--active {
   color: #E9155C; }
 
+.mix {
+  display: none; }
+
 .blog-layout {
   display: -ms-flexbox;
   display: flex; }
