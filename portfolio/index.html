@@ -7,16 +7,16 @@ title: Portfolio
     <main role="main">
 
         <ul class="category-container category-container--portfolio">
-          <a href="#all" class="category-container__category category-container__category_all category-container__category--active"><li>All</li></a>
-          <a href="#branding" class="category-container__category category-container__category_branding"><li>Branding</li></a>
-          <a href="#print" class="category-container__category category-container__category_print"><li>Print</li></a>
-          <a href="#development" class="category-container__category category-container__category_web"><li>Web Development</li></a>
+          <a class="filter category-container__category" data-filter=".portfolio__post"><li>All</li></a>
+          <a class="filter category-container__category" data-filter=".portfolio__post-branding"><li>Branding</li></a>
+          <a class="filter category-container__category" data-filter=".portfolio__post-print"><li>Print</li></a>
+          <a class="filter category-container__category" data-filter=".portfolio__post-web"><li>Web Development</li></a>
         </ul>
 
         <ul class="portfolio">
           {% assign sorted = (site.portfolio_posts | sort: 'date') | reverse %}
           {% for item in sorted %}
-            <div class="portfolio__post{% for portfolio_categories in item.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}">
+            <div class="mix portfolio__post{% for portfolio_categories in item.portfolio_categories %} portfolio__post-{{portfolio_categories}} {% endfor %}">
               <a class="portfolio__selector" href="{{ item.url }}">
                 <img class="portfolio__image" src="/assets/portfolio-images/{{ item.image.thumbnail }}.jpg" alt="{{ item.title }}"/>
               </a>
