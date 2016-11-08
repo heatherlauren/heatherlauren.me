@@ -517,8 +517,6 @@ footer {
       width: 8.5%; } }
 
 .blog__post {
-  display: -ms-flexbox;
-  display: flex;
   font-family: "freight-sans-pro", sans-serif;
   padding: 2% 0; }
   .blog__post p {

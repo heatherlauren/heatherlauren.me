@@ -32,7 +32,6 @@
 }
 
 .blog__post {
-  display: flex;
   font-family: $font-sans;
   padding: 2% 0;
   @extend %border-gradient-bottom;
