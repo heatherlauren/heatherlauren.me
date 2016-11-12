@@ -16,6 +16,22 @@ a {
   }
 }
 
+pre {
+  background-color: lighten($text, 75%);
+  padding: 2%;
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+figcaption {
+  a {
+    color: lighten($text, 40%);
+    font-style: italic;
+    font-family: $font-sans;
+    font-size: 0.9em;
+  }
+}
+
 // Page-wide
 
 .date {
