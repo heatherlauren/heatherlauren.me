@@ -90,7 +90,7 @@ In fact, I use this very pattern in the source code for this blog:
 However, you should be careful with this. Feature queries have good support, but aren't universally supported - most obviously in IE.
 
 <figure>
-  <img alt="Feature query compatibility table, showing a lack of support in Internet Explorer" src="/assets/images/feature-queries-compatibility.jpeg">
+  <img alt="Feature query compatibility table, showing a lack of support in Internet Explorer" src="/assets/images/feature-queries-compatibility.jpg">
 </figure>
 <figcaption>
   <a href="http://caniuse.com/#feat=css-featurequeries">http://caniuse.com/#feat=css-featurequeries</a>
